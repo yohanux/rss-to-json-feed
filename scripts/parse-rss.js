@@ -6,7 +6,7 @@ const yaml = require('js-yaml');
   const parser = new Parser();
 
   // feeds.yaml 읽기
-  const config = yaml.load(fs.readFileSync('./feeds.yaml', 'utf8'));
+  const config = yaml.load(fs.readFileSync('./toss.yaml', 'utf8'));
   const result = [];
 
   for (const url of config.feeds) {
