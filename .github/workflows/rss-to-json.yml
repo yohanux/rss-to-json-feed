@@ -27,4 +27,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Update RSS feed JSON'
-          file_pattern: docs/feed.json
+          file_pattern: docs/toss.json
