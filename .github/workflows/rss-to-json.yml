@@ -1,30 +1,31 @@
-name: RSS to JSON
+name: Generate RSS JSONs
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *'  # 매 정각
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install rss-parser js-yaml
 
-      - name: Run parser script
-        run: node scripts/parse-rss.js
+      - name: Run RSS Parser
+        run: node index.js
 
-      - name: Commit and push changes
+      - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Update RSS feed JSON'
-          file_pattern: docs/toss.json
+          commit_message: 'Update all RSS feed JSONs'
+          file_pattern: docs/*.json
+          token: ${{ secrets.PERSONAL_TOKEN }}
