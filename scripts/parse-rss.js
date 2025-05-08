@@ -4,7 +4,9 @@ const yaml = require('js-yaml');
 
 (async () => {
   const parser = new Parser();
-  const config = yaml.load(fs.readFileSync('feeds.yaml', 'utf8'));
+
+  // feeds.yaml 읽기
+  const config = yaml.load(fs.readFileSync('./feeds.yaml', 'utf8'));
   const result = [];
 
   for (const url of config.feeds) {
@@ -13,12 +15,18 @@ const yaml = require('js-yaml');
       result.push({
         title: feed.title,
         url,
-        items: feed.items.slice(0, 10), // 최신 10개만
+        items: feed.items.slice(0, 10),
       });
     } catch (err) {
-      console.error(`Failed to parse ${url}: ${err.message}`);
+      console.error(`❌ ${url} 파싱 실패: ${err.message}`);
     }
   }
 
+  // docs 폴더가 없다면 생성
+  if (!fs.existsSync('docs')) {
+    fs.mkdirSync('docs');
+  }
+
   fs.writeFileSync('docs/feed.json', JSON.stringify(result, null, 2));
+  console.log('✅ JSON 생성 완료: docs/feed.json');
 })();
