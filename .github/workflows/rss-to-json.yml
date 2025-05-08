@@ -3,23 +3,23 @@ name: RSS to JSON
 on:
   schedule:
     - cron: '0 * * * *'  # 매시 정각마다 실행
-  workflow_dispatch:      # 수동 실행도 가능
+  workflow_dispatch:      # 수동 실행
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 저장소 체크아웃
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: RSS 피드 변환
+      - name: Run rss-to-json action
         uses: i-valchev/rss-to-json@v1
         with:
           source: feeds.yaml
           target: docs/feed.json
 
-      - name: 변경 사항 커밋 및 푸시
+      - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Update RSS feed JSON'
