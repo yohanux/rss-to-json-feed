@@ -27,6 +27,6 @@ const yaml = require('js-yaml');
     fs.mkdirSync('docs');
   }
 
-  fs.writeFileSync('docs/feed.json', JSON.stringify(result, null, 2));
+  fs.writeFileSync('docs/toss.json', JSON.stringify(result, null, 2));
   console.log('✅ JSON 생성 완료: docs/feed.json');
 })();
