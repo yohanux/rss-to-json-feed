@@ -4,7 +4,12 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 (async () => {
-  const parser = new Parser();
+  const parser = new Parser({
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (compatible; RSSBot/1.0; +https://github.com/yohanux/rss-to-json-feed)'
+    }
+  });
+
   const feedsDir = './feeds';
   const outputDir = './docs';
 
