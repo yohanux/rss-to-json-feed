@@ -18,7 +18,10 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install rss-parser js-yaml
+        run: |
+          npm install rss-parser
+          npm install axios
+          npm install js-yaml
 
       - name: Run RSS Parser
         run: node index.js
