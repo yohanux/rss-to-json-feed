@@ -1,15 +1,23 @@
 const Parser = require('rss-parser');
+const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-(async () => {
-  const parser = new Parser({
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (compatible; RSSBot/1.0; +https://github.com/yohanux/rss-to-json-feed)'
-    }
-  });
+const parser = new Parser();
 
+async function fetchAndParseWithAxios(url) {
+  const response = await axios.get(url, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+      'Accept': 'application/rss+xml,application/xml',
+    },
+    responseType: 'text',
+  });
+  return parser.parseString(response.data);
+}
+
+(async () => {
   const feedsDir = './feeds';
   const outputDir = './docs';
 
@@ -26,7 +34,10 @@ const yaml = require('js-yaml');
     const allItems = [];
     for (const url of config.feeds) {
       try {
-        const feed = await parser.parseURL(url);
+        const feed = url.includes('woowahan.com')
+          ? await fetchAndParseWithAxios(url)
+          : await parser.parseURL(url);
+
         allItems.push(...feed.items.slice(0, 10));
       } catch (err) {
         console.error(`❌ ${url} 파싱 실패: ${err.message}`);
