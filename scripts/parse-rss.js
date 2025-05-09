@@ -1,29 +1,51 @@
 const Parser = require('rss-parser');
+const axios = require('axios');
 const fs = require('fs');
+const path = require('path');
 const yaml = require('js-yaml');
 
+const parser = new Parser();
+
+async function fetchAndParseWithAxios(url) {
+  const response = await axios.get(url, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+      'Accept': 'application/rss+xml,application/xml',
+    },
+    responseType: 'text',
+  });
+  return parser.parseString(response.data);
+}
+
 (async () => {
-  const parser = new Parser();
+  const feedsDir = './feeds';
+  const outputDir = './docs';
 
-  // feeds.yaml (또는 toss.yaml) 읽기
-  const config = yaml.load(fs.readFileSync('./toss.yaml', 'utf8'));
-  const allItems = [];
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir);
+  }
 
-  for (const url of config.feeds) {
-    try {
-      const feed = await parser.parseURL(url);
-      // 아이템들만 모으기
-      allItems.push(...feed.items.slice(0, 10));
-    } catch (err) {
-      console.error(`❌ ${url} 파싱 실패: ${err.message}`);
+  const yamlFiles = fs.readdirSync(feedsDir).filter(file => file.endsWith('.yaml'));
+
+  for (const file of yamlFiles) {
+    const yamlPath = path.join(feedsDir, file);
+    const config = yaml.load(fs.readFileSync(yamlPath, 'utf8'));
+
+    const allItems = [];
+    for (const url of config.feeds) {
+      try {
+        const feed = url.includes('woowahan.com')
+          ? await fetchAndParseWithAxios(url)
+          : await parser.parseURL(url);
+
+        allItems.push(...feed.items.slice(0, 10));
+      } catch (err) {
+        console.error(`❌ ${url} 파싱 실패: ${err.message}`);
+      }
     }
-  }
 
-  // docs 폴더가 없다면 생성
-  if (!fs.existsSync('docs')) {
-    fs.mkdirSync('docs');
+    const outputFile = path.join(outputDir, file.replace('.yaml', '.json'));
+    fs.writeFileSync(outputFile, JSON.stringify(allItems, null, 2));
+    console.log(`✅ 생성 완료: ${outputFile}`);
   }
-
-  fs.writeFileSync('docs/toss.json', JSON.stringify(allItems, null, 2));
-  console.log('✅ JSON 생성 완료: docs/toss.json');
 })();
