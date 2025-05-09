@@ -12,79 +12,56 @@
   },
   {
     "creator": "Channel",
-    "title": "딥러닝이란 무엇인가요?",
-    "link": "https://channel.io/ko/blog/articles/what-is-deep-learning-93bfbb58",
-    "pubDate": "Sat, 01 Jul 2006 12:00:00 GMT",
+    "title": "Kubernetes 환경에서 WebRTC 서비스의 묵음 현상 파헤치기",
+    "link": "https://channel.io/ko/blog/articles/kubernetes-webrtc-07b0d3b3",
+    "pubDate": "Fri, 09 May 2025 01:00:00 GMT",
     "dc:creator": "Channel",
-    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67245445a7bd5c84123a\" style=\"width: 100%;\" /><div>AI-CX 개념허브</div></div>",
-    "contentSnippet": "AI-CX 개념허브",
-    "guid": "27f66368f71e82739a99b2e32c49da00",
-    "isoDate": "2006-07-01T12:00:00.000Z"
+    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/680745c724c12d67e9c1\" style=\"width: 100%;\" /><div>사건 조사 보고서</div></div>",
+    "contentSnippet": "사건 조사 보고서",
+    "guid": "12e62d1496332ab8f11986c60056490d",
+    "isoDate": "2025-05-09T01:00:00.000Z"
   },
   {
     "creator": "Channel",
-    "title": "머신러닝이란 무엇인가요?",
-    "link": "https://channel.io/ko/blog/articles/what-is-machine-learning-6f0de76a",
-    "pubDate": "Tue, 30 Apr 2019 12:00:00 GMT",
+    "title": "GitHub Actions 도입기(2): 실제 운영 및 트러블슈팅",
+    "link": "https://channel.io/ko/blog/articles/github-actions-2-18b0536b",
+    "pubDate": "Fri, 03 Jan 2025 12:00:00 GMT",
     "dc:creator": "Channel",
-    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/6724546ae73ae8a3a72a\" style=\"width: 100%;\" /><div>AI-CX 개념허브</div></div>",
-    "contentSnippet": "AI-CX 개념허브",
-    "guid": "07f85beaf9125be20b10ea7ec1605fcf",
-    "isoDate": "2019-04-30T12:00:00.000Z"
+    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67d80cb6e2ed39f24f9d\" style=\"width: 100%;\" /><div>Github Actions self-hosted runner 트러블슈팅</div></div>",
+    "contentSnippet": "Github Actions self-hosted runner 트러블슈팅",
+    "guid": "cf0174c764a6fd8b26c6be68523af233",
+    "isoDate": "2025-01-03T12:00:00.000Z"
   },
   {
     "creator": "Channel",
-    "title": "AI 어시스턴트, 워크플로우 자동화로 200% 활용해보기",
-    "link": "https://channel.io/ko/blog/articles/ai-assistant-cases-84c6ded9",
+    "title": "사용량 기반 과금 모델 구현하기: 해답편",
+    "link": "https://channel.io/ko/blog/articles/bm-update-solution-cfbc95ac",
+    "pubDate": "Mon, 20 Jan 2025 12:00:00 GMT",
     "dc:creator": "Channel",
-    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/681c0d9fe22ee2e04359\" style=\"width: 100%;\" /><div>AI 어시스턴트를 워크플로우와 연결하여 쓰고 있는 고객사 및 채널톡의 사례를 소개합니다.</div></div>",
-    "contentSnippet": "AI 어시스턴트를 워크플로우와 연결하여 쓰고 있는 고객사 및 채널톡의 사례를 소개합니다.",
-    "guid": "32e44c67242c00b0031e0e5880f5dd9a"
+    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67c836121d4c7ffa5a5c\" style=\"width: 100%;\" /><div>DynamoDB Streams 기반 사용량 비례 과금 모델 구현 과정</div></div>",
+    "contentSnippet": "DynamoDB Streams 기반 사용량 비례 과금 모델 구현 과정",
+    "guid": "359685a4c4a2f12c80e47dcb9331af46",
+    "isoDate": "2025-01-20T12:00:00.000Z"
   },
   {
     "creator": "Channel",
-    "title": "쉽고 간결하다! 워크플로우 대규모 업데이트",
-    "link": "https://channel.io/ko/blog/articles/workflow-v2-31e44134",
+    "title": "Table QA with LLMs",
+    "link": "https://channel.io/ko/blog/articles/ai-table-qa-with-llms-2b7e55d7",
+    "pubDate": "Thu, 24 Jan 2002 12:00:00 GMT",
     "dc:creator": "Channel",
-    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/6808d5889cdb3d952520\" style=\"width: 100%;\" /><div>2025년 5월, 채널톡 워크플로우가 완전히 새로워집니다.</div></div>",
-    "contentSnippet": "2025년 5월, 채널톡 워크플로우가 완전히 새로워집니다.",
-    "guid": "a15470757f860e1addf495cc17369fba"
+    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/672452b89ec53de075d2\" style=\"width: 100%;\" /><div>Huge table parser by pseudocode filtering</div></div>",
+    "contentSnippet": "Huge table parser by pseudocode filtering",
+    "guid": "06d9803e304b506bd3ee8900c2db4035",
+    "isoDate": "2002-01-24T12:00:00.000Z"
   },
   {
     "creator": "Channel",
-    "title": "투자 없이 연매출 300억, 알라미를 만든 흑자 DNA",
-    "link": "https://channel.io/ko/blog/articles/interview-alamy-91d26dc1",
+    "title": "채널톡 제품과 세일즈의 연결다리 'Solution Architect'",
+    "link": "https://channel.io/ko/blog/articles/interview-solutionarchitect-2c1244e1",
     "dc:creator": "Channel",
-    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/6807205e79aecbaaf36b\" style=\"width: 100%;\" /><div>딜라이트룸 신재명 대표 인터뷰</div></div>",
-    "contentSnippet": "딜라이트룸 신재명 대표 인터뷰",
-    "guid": "b3064b3a45ab5910e87338efd03c59ba"
-  },
-  {
-    "creator": "Channel",
-    "title": "우리 채널 맞춤 비서, AI 어시스턴트를 고용해 보세요",
-    "link": "https://channel.io/ko/blog/articles/ai-assistant-alf-1ba879b9",
-    "dc:creator": "Channel",
-    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67d127c32d19a226819f\" style=\"width: 100%;\" /><div>헷갈리는 내용이 있다면 ALF를 불러 물어보세요</div></div>",
-    "contentSnippet": "헷갈리는 내용이 있다면 ALF를 불러 물어보세요",
-    "guid": "33d95203a0c9db6f87daabd8d4507855"
-  },
-  {
-    "creator": "Channel",
-    "title": "체험! 낼나 삶의 현장 후기",
-    "link": "https://channel.io/ko/blog/articles/visit-nelna-75a774ee",
-    "dc:creator": "Channel",
-    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67e26903a37575e8d143\" style=\"width: 100%;\" /><div>영상에 담지 못한 비하인드 스토리</div></div>",
-    "contentSnippet": "영상에 담지 못한 비하인드 스토리",
-    "guid": "1169ff6f08e6023aae1a5fa888ebdd29"
-  },
-  {
-    "creator": "Channel",
-    "title": "2025 채널톡 사용료 80% 지원받는 바우처 신청 방법",
-    "link": "https://channel.io/ko/blog/articles/voucher-2025-c851db8b",
-    "dc:creator": "Channel",
-    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67f62032572bd2f75ff4\" style=\"width: 100%;\" /><div>작은 기업이라면 주목해 주세요!</div></div>",
-    "contentSnippet": "작은 기업이라면 주목해 주세요!",
-    "guid": "f15c530d648c47da86c3f7cefe67c2f9"
+    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67eb8d7835f3b212286f\" style=\"width: 100%;\" /><div>솔루션 아키텍트 기리</div></div>",
+    "contentSnippet": "솔루션 아키텍트 기리",
+    "guid": "f5aee43ee7e121d11eb1f45c739ce309"
   },
   {
     "creator": "Channel",
@@ -94,5 +71,32 @@
     "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67e0dc69797a65cb0189\" style=\"width: 100%;\" /><div>대용량 트래픽을 안정적으로 처리하는 방법</div></div>",
     "contentSnippet": "대용량 트래픽을 안정적으로 처리하는 방법",
     "guid": "ea8aed6f259acb5fb53dceef13e5ae66"
+  },
+  {
+    "creator": "Channel",
+    "title": "GitHub Actions 도입기(1): ARC 구축 및 Container Jobs 지원",
+    "link": "https://channel.io/ko/blog/articles/github-actions-1-c3fc8c4d",
+    "dc:creator": "Channel",
+    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67d80c68d47882c4df90\" style=\"width: 100%;\" /><div>CircleCI에서 Github Actions로 전환하기</div></div>",
+    "contentSnippet": "CircleCI에서 Github Actions로 전환하기",
+    "guid": "1d73c40ecbc52aa62cffd4d037d4f1c3"
+  },
+  {
+    "creator": "Channel",
+    "title": "Jetpack Paging 안 쓰고 바퀴 재발명하기",
+    "link": "https://channel.io/ko/blog/articles/infinite-scroll-module-b6bcc5d5",
+    "dc:creator": "Channel",
+    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67cee272c736b5bdebf0\" style=\"width: 100%;\" /><div>손쉽게 무한 스크롤을 구현하기</div></div>",
+    "contentSnippet": "손쉽게 무한 스크롤을 구현하기",
+    "guid": "60b0eb390f1f16c103325f040b0a19e5"
+  },
+  {
+    "creator": "Channel",
+    "title": "제품 요구사항이 명확한데 사용자 인터뷰가 필요할까?",
+    "link": "https://channel.io/ko/blog/articles/user-interview-0bb1895a",
+    "dc:creator": "Channel",
+    "content": "<div><img src=\"https://cf.channel.io/document/spaces/8276/usermedia/67c7ee7abbe72cec54b8\" style=\"width: 100%;\" /><div>고객 인터뷰를 통해 제품 다듬어 나가기</div></div>",
+    "contentSnippet": "고객 인터뷰를 통해 제품 다듬어 나가기",
+    "guid": "d02bb91d0c1325e9daad2c9d2c04a6cf"
   }
 ]
